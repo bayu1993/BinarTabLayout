@@ -2,11 +2,11 @@
     <string name="app_name">BinarTabLayout</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <string name="tab_home">Hello aku fragment home</string>
     <string name="tab_artikel">Hello aku fragment artikel</string>
-    <string name="tab_save">Hello aku fragment save</string>
     <string name="ok">Ok</string>
+    <string name="search_startup">Search Startup</string>
+    <string name="notif">notif</string>
+    <string name="tab_save">Hello aku fragment save</string>
 
 </resources>

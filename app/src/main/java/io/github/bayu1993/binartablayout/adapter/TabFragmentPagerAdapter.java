@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import io.github.bayu1993.binartablayout.fragment.TabArtikelFragment;
 import io.github.bayu1993.binartablayout.fragment.TabHomeFragment;
+import io.github.bayu1993.binartablayout.fragment.TabSaveFragment;
 
 /**
  * Created by dell on 3/30/18.
@@ -13,7 +14,7 @@ import io.github.bayu1993.binartablayout.fragment.TabHomeFragment;
 
 public class TabFragmentPagerAdapter extends FragmentPagerAdapter {
     private String[] title = new String[]{
-            "Home", "Artikel"
+            "Home", "Artikel","Save"
     };
 
     public TabFragmentPagerAdapter(FragmentManager fm) {
@@ -24,8 +25,10 @@ public class TabFragmentPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         if (position == 0){
             return new TabHomeFragment();
-        }else{
+        }else if (position == 1){
             return new TabArtikelFragment();
+        }else {
+            return new TabSaveFragment();
         }
     }
 
@@ -36,7 +39,7 @@ public class TabFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return title.length;
     }
 
 }
